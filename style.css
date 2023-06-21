@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/** RESET **/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+} 
+
+:root {
+
+    /*PRIMARY*/
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /* NEUTRAL */
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%); 
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+/* body{
+    background-color: var(--red);;
+} */
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--red);
+    background-image: url("images/bg-intro-mobile.png");
+} 
+.head-title-two{
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin: auto;
+}
+.head-title h1{
+    font-size: 2rem;
+    color: white;
+    
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.head-title p{
+    font-size: 1rem;
+    color: white;
+   
+}
+.btn-try{
+    background-color: var(--blue);
+    text-align: center;
+    padding: 10px 3rem;
+    margin: auto;
+    border-radius: 10px;
+}
+.try-text{
+    font-weight: bold;
+}
+.form-user{
+    margin-top: 1.5rem;
+    background-color: white;
+    padding: 1.2rem 1.2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-claim{
+    background-color: var(--green);
+    text-align: center;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    max-width: 100%;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: auto;
+}
+.btn-claim:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.text-condition p{
+    text-align: center;
+    color: var(--grayish-blue);
+    font-size: 14px;
+    margin-top: 20px;
+}
+.text-terminos{
+    color:red;
+    font-weight: 700;
+}
+
+footer{
+    position:fixed;
+    padding-top: 8px;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .head-title-two{
+        text-align: center;
+    }
+}
